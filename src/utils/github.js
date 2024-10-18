@@ -142,7 +142,6 @@ async function fetchAndFilterEvents() {
 
         const pr = event.payload.pull_request || {};
         const payload = event.payload;
-
         const description = eventDescriptions[type]
             ? (typeof eventDescriptions[type] === 'function'
                 ? eventDescriptions[type]({ repo, isPrivate, pr, payload })
