@@ -121,9 +121,7 @@ async function fetchAndFilterEvents() {
         //     break;
         // }
     }
-
     filteredEvents = filteredEvents.slice(0, eventLimit);
-
     const fetchedEventCount = filteredEvents.length;
     const totalFetchedEvents = allEvents.length;
 
