@@ -30471,9 +30471,7 @@ async function fetchAndFilterEvents() {
         //     break;
         // }
     }
-
     filteredEvents = filteredEvents.slice(0, eventLimit);
-
     const fetchedEventCount = filteredEvents.length;
     const totalFetchedEvents = allEvents.length;
 
@@ -30492,7 +30490,6 @@ async function fetchAndFilterEvents() {
 
         const pr = event.payload.pull_request || {};
         const payload = event.payload;
-
         const description = eventDescriptions[type]
             ? (typeof eventDescriptions[type] === 'function'
                 ? eventDescriptions[type]({ repo, isPrivate, pr, payload })
@@ -30515,7 +30512,7 @@ module.exports = {
     fetchAndFilterEvents,
 };
 
-
+//add something
 
 /***/ }),
 
